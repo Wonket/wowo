@@ -8,14 +8,14 @@ on:
 env:
   PAT: ${{ secrets.PAT }}
   USER: ${{ secrets.USER }}
-  REPO: ${{ secrets.REPO }}
+  REPO: ${{ secrets.REPO }}  # 🔁 这里作为 "目标远程仓库"
 
 jobs:
   run-automation:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout current repo
       uses: actions/checkout@v4
       with:
         persist-credentials: false
@@ -25,43 +25,43 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
         pip install --upgrade pip
         pip install jinja2 python-dotenv
 
-    - name: Run bludweb.py script
+    - name: Run bludweb.py to generate 'webs' directory
       run: python templates/bludweb.py webs 99
       env:
         PAT: ${{ secrets.PAT }}
         USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}
+        REPO: ${{ secrets.REPO }}  # 保持一致，脚本中会被忽略推送
 
-    - name: Debug output
+    - name: Debug output (可选)
       run: |
-        echo "Listing files in 'webs' directory:"
-        ls -la webs || echo "Directory not found"
-        cat webs/* || echo "No files"
+        echo "✅ webs 目录内容："
+        ls -la webs || echo "webs 不存在"
+        cat webs/* || echo "无文件"
 
-    - name: Push changes manually
+    - name: Push 'webs/' directory to target repo
       env:
         TOKEN: ${{ secrets.PAT }}
         USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}
+        REPO: ${{ secrets.REPO }}  # 👈 这里指向目标仓库名（如 your-username/other-repo）
       run: |
-        git config --global user.name "${USER}"
-        git config --global user.email "${USER}@users.noreply.github.com"
-        
-        # 设置远程地址，使用 PAT 认证
-        git remote set-url origin https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git
-        git remote -v
-        
+        echo "📥 克隆目标仓库：${USER}/${REPO}"
+        git clone https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git target-repo
+
+        echo "🧹 清空目标仓库内容"
+        rm -rf target-repo/*
+
+        echo "📦 拷贝 webs 到目标仓库"
+        cp -r webs/* target-repo/
+
+        cd target-repo
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+
         git add .
-        git commit -m "🤖 Auto update [skip ci]" || echo "Nothing to commit"
-        
-        # 尝试拉取远程更改以避免冲突
-        git pull origin main --rebase || { echo "Rebase failed. Attempting force push..."; git push --force origin main; exit 0; }
-        
-        # 推送更改，如果推送失败则强制推送
-        git push origin main || { echo "Push failed. Attempting force push..."; git push --force origin main; }
-      shell: bash
+        git commit -m "📦 Updated by GitHub Actions on $(date +'%Y-%m-%d %H:%M:%S')" || echo "Nothing to commit"
+        git push origin main
