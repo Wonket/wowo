@@ -2,8 +2,8 @@ name: Keep Active
 
 on:
   schedule:
-    - cron: "0 0 */15 * *"  # 每15天执行一次
-  workflow_dispatch:        # 可手动运行
+    - cron: "0 0 */15 * *"  # 每15天运行一次
+  workflow_dispatch:
 
 env:
   PAT: ${{ secrets.PAT }}
@@ -15,40 +15,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false  # 禁用默认凭据
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install jinja2 python-dotenv
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install jinja2 python-dotenv
 
-      - name: Run script
-        run: python templates/bludweb.py webs 99
+    - name: Run script
+      run: python templates/bludweb.py webs 99
+      env:
+        PAT: ${{ secrets.PAT }}
+        USER: ${{ secrets.USER }}
+        REPO: ${{ secrets.REPO }}
 
-      - name: Debug output
-        run: |
-          echo "Listing files in 'webs' directory:"
-          ls -la webs || echo "Directory not found"
-          cat webs/* || echo "No files"
+    - name: Debug output
+      run: |
+        echo "Listing files in 'webs' directory:"
+        ls -la webs || echo "Directory not found"
+        cat webs/* || echo "No files"
 
-      - name: Push changes manually
-        env:
-          TOKEN: ${{ secrets.PAT }}
-          USER: ${{ secrets.USER }}
-          REPO: ${{ secrets.REPO }}
-        run: |
-          git config --global user.name "${USER}"
-          git config --global user.email "${USER}@users.noreply.github.com"
-          git remote set-url origin https://${TOKEN}@github.com/${USER}/${REPO}.git
-
-          git add .
-          git commit -m "🤖 Auto update [skip ci]" || echo "Nothing to commit"
-
-          git pull --rebase || git pull --no-rebase || echo "Pull failed"
-          git push origin main || echo "Push failed"
+    - name: Push changes manually
+      env:
+        TOKEN: ${{ secrets.PAT }}
+        USER: ${{ secrets.USER }}
+        REPO: ${{ secrets.REPO }}
+      run: |
+        git config --global user.name "${USER}"
+        git config --global user.email "${USER}@users.noreply.github.com"
+        
+        # 设置远程仓库地址为带 PAT 的 URL
+        git remote set-url origin https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git
+        
+        # 输出当前远程地址，便于调试
+        git remote -v
+        
+        git add .
+        git commit -m "🤖 Auto update [skip ci]" || echo "Nothing to commit"
+        
+        git pull --rebase || git pull --no-rebase || echo "Pull failed"
+        
+        git push origin main || echo "Push failed"
+      shell: bash
