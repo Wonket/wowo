@@ -2,8 +2,8 @@ name: Keep Active
 
 on:
   schedule:
-    - cron: "0 0 */15 * *"  # 每15天执行一次
-  workflow_dispatch:       # 支持手动触发
+    - cron: "0 0 */15 * *"
+  workflow_dispatch:
 
 env:
   PAT: ${{ secrets.PAT }}
@@ -17,51 +17,52 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        persist-credentials: false  # 用我们自定义 PAT
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
-        pip install -U pip
+        python -m pip install --upgrade pip
         pip install jinja2 python-dotenv
 
-    - name: Run script
+    - name: Run bludweb.py script
       run: python templates/bludweb.py webs 99
-      env:
-        PAT: ${{ secrets.PAT }}
-        USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}
 
-    - name: Commit and push if changed
-      env:
-        PAT: ${{ secrets.PAT }}
-        USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}
+    - name: List generated files
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
+        ls -la webs || echo "webs directory not found"
+        cat webs/* || echo "No files in webs directory"
+
+    - name: Pull changes from remote
+      run: |
+        git fetch origin
+        git rebase origin/main || git merge origin/main
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        echo "Current branch is: $BRANCH"
 
         if [ -d "webs" ]; then
           git add webs
         else
-          echo "webs directory not found. Skipping."
+          echo "webs directory does not exist, skipping."
           exit 0
         fi
 
         if git diff --cached --quiet; then
-          echo "No changes to commit."
+          echo "No changes to commit"
           exit 0
         fi
 
         git commit -m "Update webs directory [ci skip]" -q
 
-        git remote set-url origin https://$PAT@github.com/$USER/$REPO.git
-
-        git pull --rebase || git pull --no-rebase
-
-        git push origin HEAD
+        # Push changes
+        git push origin "$BRANCH"
+      shell: bash
