@@ -8,7 +8,7 @@ on:
 env:
   PAT: ${{ secrets.PAT }}
   USER: ${{ secrets.USER }}
-  REPO: ${{ secrets.REPO }}  # 🔁 这里作为 "目标远程仓库"
+  REPO: ${{ secrets.REPO }}  # 远程目标仓库
 
 jobs:
   run-automation:
@@ -35,33 +35,32 @@ jobs:
       env:
         PAT: ${{ secrets.PAT }}
         USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}  # 保持一致，脚本中会被忽略推送
+        REPO: ${{ secrets.REPO }}
 
-    - name: Debug output (可选)
-      run: |
-        echo "✅ webs 目录内容："
-        ls -la webs || echo "webs 不存在"
-        cat webs/* || echo "无文件"
-
-    - name: Push 'webs/' directory to target repo
+    - name: Clone target repo
       env:
         TOKEN: ${{ secrets.PAT }}
         USER: ${{ secrets.USER }}
-        REPO: ${{ secrets.REPO }}  # 👈 这里指向目标仓库名（如 your-username/other-repo）
+        REPO: ${{ secrets.REPO }}
       run: |
         echo "📥 克隆目标仓库：${USER}/${REPO}"
         git clone https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git target-repo
 
-        echo "🧹 清空目标仓库内容"
-        rm -rf target-repo/*
+    - name: Copy webs directory into target repo (overwrite only webs/)
+      run: |
+        echo "🧩 拷贝 webs/ 到目标仓库中"
+        rm -rf target-repo/webs  # 清空目标仓库的 webs/ 子目录
+        mkdir -p target-repo/webs
+        cp -r webs/* target-repo/webs/
 
-        echo "📦 拷贝 webs 到目标仓库"
-        cp -r webs/* target-repo/
-
-        cd target-repo
+    - name: Commit and push changes to target repo
+      working-directory: target-repo
+      env:
+        TOKEN: ${{ secrets.PAT }}
+      run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
-        git add .
-        git commit -m "📦 Updated by GitHub Actions on $(date +'%Y-%m-%d %H:%M:%S')" || echo "Nothing to commit"
+        git add webs
+        git commit -m "🚀 Update webs/ folder by GitHub Actions on $(date +'%F %T')" || echo "Nothing to commit"
         git push origin main
