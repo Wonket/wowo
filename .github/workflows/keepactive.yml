@@ -6,63 +6,74 @@ on:
   workflow_dispatch:
 
 env:
-  PAT: ${{ secrets.PAT }}
   USER: ${{ secrets.USER }}
   REPO: ${{ secrets.REPO }}
+  PAT: ${{ secrets.PAT }}
 
 jobs:
   run-automation:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: 📦 Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: 🐍 Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install Python dependencies
+    - name: 📥 Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install jinja2 python-dotenv
 
-    - name: Run bludweb.py script
+    - name: ⚙️ Run bludweb.py script
       run: python templates/bludweb.py webs 99
 
-    - name: List generated files
+    - name: 📂 Show generated files
       run: |
         ls -la webs || echo "webs directory not found"
         cat webs/* || echo "No files in webs directory"
 
-    - name: Pull changes from remote
+    - name: 🚀 Commit & Push Changes
+      env:
+        PAT: ${{ secrets.PAT }}
+        USER: ${{ secrets.USER }}
+        REPO: ${{ secrets.REPO }}
       run: |
-        git fetch origin
-        git rebase origin/main || git merge origin/main
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
 
         BRANCH=$(git rev-parse --abbrev-ref HEAD)
-        echo "Current branch is: $BRANCH"
+        echo "🪣 当前分支: $BRANCH"
+
+        git pull origin $BRANCH --no-edit || {
+          echo "❌ 自动合并失败，跳过推送"
+          exit 0
+        }
 
         if [ -d "webs" ]; then
           git add webs
         else
-          echo "webs directory does not exist, skipping."
+          echo "⚠️ webs 目录不存在，跳过添加"
           exit 0
         fi
 
         if git diff --cached --quiet; then
-          echo "No changes to commit"
+          echo "ℹ️ 没有变更需要提交"
           exit 0
         fi
 
-        git commit -m "Update webs directory [ci skip]" -q
+        git commit -m "Update webs [ci skip]"
 
-        # Push changes
-        git push origin "$BRANCH"
-      shell: bash
+        echo "🔐 设置远程地址为带 PAT 的认证链接"
+        git remote set-url origin https://x-access-token:${PAT}@github.com/${USER}/${REPO}.git
+
+        echo "🚚 推送到远程仓库..."
+        git push origin "$BRANCH" || {
+          echo "❌ 推送失败。"
+          exit 1
+        }
+
+        echo "✅ 推送成功！"
