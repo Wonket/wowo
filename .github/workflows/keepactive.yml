@@ -18,7 +18,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        persist-credentials: false  # 禁用默认凭据
+        persist-credentials: false
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,7 +30,7 @@ jobs:
         pip install --upgrade pip
         pip install jinja2 python-dotenv
 
-    - name: Run script
+    - name: Run bludweb.py script
       run: python templates/bludweb.py webs 99
       env:
         PAT: ${{ secrets.PAT }}
@@ -52,16 +52,16 @@ jobs:
         git config --global user.name "${USER}"
         git config --global user.email "${USER}@users.noreply.github.com"
         
-        # 设置远程仓库地址为带 PAT 的 URL
+        # 设置远程地址，使用 PAT 认证
         git remote set-url origin https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git
-        
-        # 输出当前远程地址，便于调试
         git remote -v
         
         git add .
         git commit -m "🤖 Auto update [skip ci]" || echo "Nothing to commit"
         
-        git pull --rebase || git pull --no-rebase || echo "Pull failed"
+        # 尝试拉取远程更改以避免冲突
+        git pull origin main --rebase || { echo "Rebase failed. Attempting force push..."; git push --force origin main; exit 0; }
         
-        git push origin main || echo "Push failed"
+        # 推送更改，如果推送失败则强制推送
+        git push origin main || { echo "Push failed. Attempting force push..."; git push --force origin main; }
       shell: bash
