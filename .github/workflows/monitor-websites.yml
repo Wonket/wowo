@@ -1,0 +1,56 @@
+name: Monitor Websites
+
+on:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: "*/10 * * * *"  # 每 2 小时运行一次
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run website monitoring script
+        run: |
+         python tools/monitor_websites.py urls
+        
+
+      - name: Commit and push updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add README.md urls  # 确保同时提交 README.md 和 urls 文件
+          
+          # 如果有更改，则提交
+          git diff --cached --quiet || git commit -m "Update website status and URLs"
+
+          # 获取当前分支名称
+          BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+          # 拉取最新代码并尝试自动解决冲突
+          git pull origin "$BRANCH" --rebase || (echo "⚠️ Rebase failed. Trying to resolve conflicts..." && git reset --merge && git pull origin "$BRANCH" --no-rebase)
+
+          # 检查是否有冲突
+          if [[ `git status --porcelain` == *"UU"* ]]; then
+            echo "⚠️ Merge conflict detected. Trying to resolve automatically..."
+            git checkout --theirs README.md  # 使用远程的 README.md
+            git add README.md
+            git commit -m "Automatically resolved README.md conflict"
+          fi
+
+          # 推送到远程
+          git push origin "$BRANCH" || (echo "⚠️ Push failed. Retrying with force push..." && git push --force origin "$BRANCH")

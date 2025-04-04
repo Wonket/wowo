@@ -1,8 +1,8 @@
-name: simulate_browsing
+name: Simulate Browsing
 
 on:
   schedule:
-    - cron: '*/50 * * * *'
+    - cron: "0 */10 * * *"  # 每 10 小时运行一次
   workflow_dispatch:
 
 jobs:
@@ -11,110 +11,90 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium requests jinja2
+
+      - name: Check available disk space
+        run: df -h
 
       - name: Cache Chrome and ChromeDriver
         id: cache-chrome
         uses: actions/cache@v3
         with:
           path: |
-            google-chrome-stable_current_amd64.deb
-            chromedriver_linux64.zip
-            /usr/local/bin/chromedriver
-          key: ${{ runner.os }}-chrome-cache-${{ hashFiles('google-chrome-stable_current_amd64.deb') }}-${{ hashFiles('chromedriver_linux64.zip') }}-${{ hashFiles('/usr/local/bin/chromedriver') }}
+            ./chrome/opt/google/chrome
+            ./chrome/chromedriver
+          key: chrome-chromedriver-${{ runner.os }}-chrome-134
+          restore-keys: |
+            chrome-chromedriver-${{ runner.os }}-
 
-      - name: Get cache size
-        id: cache-size
+      - name: Install Chrome and ChromeDriver (if not cached)
+        if: steps.cache-chrome.outputs.cache-hit != 'true'
         run: |
-          cache_size=$(du -sh $GITHUB_WORKSPACE | awk '{print $1}')
-          echo "Cache size: $cache_size"
-          echo "size=$cache_size" >> $GITHUB_ENV
-
-      - name: Clear cache if size > 1GB
-        if: steps.cache-size.outputs.size >= '1G'
-        run: |
-          echo "Cache size is greater than 1GB. Clearing cache..."
-          actions/cache@v3
-          with:
-            path: |
-              google-chrome-stable_current_amd64.deb
-              chromedriver_linux64.zip
-              /usr/local/bin/chromedriver
-            key: ${{ runner.os }}-chrome-cache-${{ hashFiles('google-chrome-stable_current_amd64.deb') }}-${{ hashFiles('chromedriver_linux64.zip') }}-${{ hashFiles('/usr/local/bin/chromedriver') }}
-            restore-keys: |
-              ${{ runner.os }}-chrome-cache-
-
-      - name: Set up Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
-
-      - name: Check if Chrome is already downloaded
-        id: check_chrome
-        run: |
-          if [[ ! -f google-chrome-stable_current_amd64.deb ]]; then
-            echo "name=download_chrome::true" >> $GITHUB_ENV
-          else
-            echo "name=download_chrome::false" >> $GITHUB_ENV
+          mkdir -p ./chrome/opt/google/chrome ./chrome/chromedriver
+          wget -O google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome.deb || sudo apt-get -f install -y
+          rm -f google-chrome.deb
+          google-chrome --version
+          cp -r /opt/google/chrome/* ./chrome/opt/google/chrome/
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          CHROME_MAJOR_VERSION=$(echo "$CHROME_VERSION" | cut -d'.' -f1)
+          echo "Chrome Version: $CHROME_VERSION"
+          DRIVER_VERSION=$(curl -sS "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$CHROME_MAJOR_VERSION")
+          if echo "$DRIVER_VERSION" | grep -q "404" || [ -z "$DRIVER_VERSION" ]; then
+            echo "No ChromeDriver found for Chrome $CHROME_MAJOR_VERSION in Chrome for Testing, falling back to recent versions."
+            for i in $(seq $((CHROME_MAJOR_VERSION - 1)) -1 125); do
+              DRIVER_VERSION=$(curl -sS "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$i")
+              if ! echo "$DRIVER_VERSION" | grep -q "404" && [ -n "$DRIVER_VERSION" ] && echo "$DRIVER_VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'; then
+                echo "Found compatible version: $DRIVER_VERSION"
+                break
+              fi
+              if [ "$i" -eq 125 ]; then
+                echo "No compatible ChromeDriver found from $CHROME_MAJOR_VERSION to 125, using fallback version 133.0.6788.123."
+                DRIVER_VERSION="133.0.6788.123"
+              fi
+            done
           fi
+          echo "Matching ChromeDriver Version: $DRIVER_VERSION"
+          wget -q -O chromedriver_linux64.zip "https://storage.googleapis.com/chrome-for-testing-public/$DRIVER_VERSION/linux64/chromedriver-linux64.zip" || {
+            echo "❌ Failed to download ChromeDriver for version $DRIVER_VERSION from Chrome for Testing. Trying legacy source..."
+            wget -q -O chromedriver_linux64.zip "https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip" || {
+              echo "❌ Failed to download ChromeDriver for version $DRIVER_VERSION from both sources. Aborting."
+              exit 1
+            }
+          }
+          unzip -t chromedriver_linux64.zip || {
+            echo "❌ ZIP file is corrupted! Aborting."
+            rm -f chromedriver_linux64.zip
+            exit 1
+          }
+          unzip -o chromedriver_linux64.zip
+          mv chromedriver-linux64/chromedriver ./chrome/chromedriver/
+          chmod +x ./chrome/chromedriver/chromedriver
+          rm -rf chromedriver_linux64.zip chromedriver-linux64
+          ./chrome/chromedriver/chromedriver --version
 
-      - name: Download Chrome
-        continue-on-error: true
-        if: steps.check_chrome.outputs.download_chrome == 'true'
+      - name: Verify Chrome and ChromeDriver
         run: |
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb
-          sudo apt-get -f install -y
+          ./chrome/opt/google/chrome/google-chrome --version || echo "Chrome not found"
+          ./chrome/chromedriver/chromedriver --version || echo "ChromeDriver not found"
 
-      - name: Cache ChromeDriver
-        id: cache-chromedriver
-        uses: actions/cache@v3
-        with:
-          path: |
-            /usr/local/bin/chromedriver
-          key: ${{ runner.os }}-chromedriver-cache-${{ hashFiles('/usr/local/bin/chromedriver') }}
-
-      - name: Install ChromeDriver
-        if: steps.cache-chromedriver.outputs.cache-hit != 'true'
-        run: |
-          unzip -n chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/chromedriver
-
-      - name: Install dependencies
-        run: |
-           pip install selenium
-           pip install requests
-           pip install jinja2
-
-      - name: Delay random minutes
-        run: |
-          delay=$((RANDOM % 19 + 1))
-          sleep "$delay"
-
-      - name: Run script
-        run: python ./tools/script.py urls
-
-      - name: Build web
-        run: python ./tools/bludweb.py webs 150
-        
-      - name: remove_duplicates
-        run: python ./tools/remove_duplicates.py urls
-
-      - name: Fetch web
-        run: python ./tools/fetch_urls.py urls
-
-      - name: cut web
-        run: |
-         chmod +x ./tools/cut.sh
-         ./tools/cut.sh
-
-      - name: Run Python script
+      - name: Run simulate_browsing script
         env:
-          FILENAME: 'urls'  # 替换为您的 URL 地址文件名
+          FILENAME: "infinity"
         run: |
           export DISPLAY=:99
-          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          Xvfb :99 -screen 0 1920x1200x24 > /dev/null 2>&1 &
+          export PATH=$PATH:$(pwd)/chrome/opt/google/chrome:$(pwd)/chrome/chromedriver
           python ./tools/simulate_browsing.py $FILENAME
 
       - name: Configure Git
@@ -122,10 +102,38 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-      - name: Commit and push changes
-        continue-on-error: true
+      - name: Ensure .gitignore exists
         run: |
-          git add .
-          git diff-index --quiet HEAD || git commit -m "Update failed URLs" -q
-          git pull origin HEAD --rebase
-          git push origin HEAD
+          echo "google-chrome.deb" >> .gitignore
+          echo "chromedriver_linux64.zip" >> .gitignore
+          echo "*.deb" >> .gitignore
+          echo "*.zip" >> .gitignore
+          echo "chrome/" >> .gitignore
+
+      - name: Commit and push changes
+        run: |
+          # 禁用 set -e，确保所有命令执行
+          set +e
+          BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          echo "Current branch is: $BRANCH"
+          echo "Git status before staging:"
+          git status
+          # 暂存所有修改文件
+          git add README.md webs urls infinity .gitignore
+          echo "Git status after staging:"
+          git status
+          # 提交更改
+          if ! git diff-index --quiet HEAD --cached; then
+            git commit -m "Update files from simulate_browsing"
+            echo "Changes committed"
+          else
+            echo "No changes to commit"
+          fi
+          # 拉取并推送
+          git pull origin "$BRANCH" --rebase || echo "Pull failed, continuing"
+          git push origin "$BRANCH" || echo "Push failed, continuing"
+        continue-on-error: true
+
+      - name: Clean up large files
+        run: |
+          find . -size +50M -delete

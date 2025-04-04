@@ -1,0 +1,70 @@
+name: Keep Active
+
+on:
+  schedule:
+    - cron: "0 0 */15 * *"
+  workflow_dispatch:
+
+env:
+  PAT: ${{ secrets.PAT }}
+  USER: ${{ secrets.USER }}
+  REPO: ${{ secrets.REPO }}
+
+jobs:
+  run-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jinja2 python-dotenv
+
+    - name: Run bludweb.py script
+      run: python templates/bludweb.py webs 99
+
+    - name: List generated files
+      run: |
+        ls -la webs || echo "webs directory not found"
+        cat webs/* || echo "No files in webs directory"
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        echo "Current branch is: $BRANCH"
+
+        if [ -d "webs" ]; then
+          git add webs
+        else
+          echo "webs directory does not exist, skipping."
+          exit 0
+        fi
+
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        git commit -m "Update webs directory [ci skip]" -q
+
+        git pull --rebase || {
+          echo "Rebase failed. Attempting normal pull..."
+          git pull --no-rebase || {
+            echo "Both pull attempts failed."
+            exit 1
+          }
+        }
+
+        git push origin "$BRANCH"
+      shell: bash
