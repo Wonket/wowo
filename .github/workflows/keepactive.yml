@@ -2,7 +2,7 @@ name: Keep Active
 
 on:
   schedule:
-    - cron: "0 0 */5 * *"  # 每15天运行一次
+    - cron: "0 0 */5 * *"  # 每5天运行一次
   workflow_dispatch:
 
 env:
@@ -40,7 +40,7 @@ jobs:
           echo "🧹 超过 50 个文件，清空 webs 目录"
           rm -rf webs/*
         else
-          echo "✅ 文件数不超过 5，无需清空"
+          echo "✅ 文件数不超过 50，无需清空"
         fi
 
     - name: Run bludweb.py to regenerate webs/ in A 仓库
@@ -74,13 +74,23 @@ jobs:
         mkdir -p target-repo/webs
         cp -r webs/* target-repo/webs/
 
-    - name: Commit and push to B 仓库
+    - name: Commit and push changes to B repo
       working-directory: target-repo
       env:
         TOKEN: ${{ secrets.PAT }}
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add webs
-        git commit -m "🚀 同步 webs/ 到 B 仓库：$(date +'%F %T')" || echo "Nothing to commit"
-        git push origin main  # 使用 PAT 推送到 B 仓库
+        
+        # 获取远程仓库的默认分支
+        DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD branch' | sed 's/.*: //')
+
+        # 如果 HEAD branch 是 main 或 master，则推送到对应的分支
+        if [ "$DEFAULT_BRANCH" == "main" ]; then
+          git push origin main
+        elif [ "$DEFAULT_BRANCH" == "master" ]; then
+          git push origin master
+        else
+          echo "❌ 未找到正确的主分支：$DEFAULT_BRANCH"
+          exit 1
+        fi
