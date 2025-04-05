@@ -50,6 +50,11 @@ jobs:
         USER: ${{ secrets.USER }}
         REPO: ${{ secrets.REPO }}
 
+    - name: Check for changes in A repo before commit
+      run: |
+        git status  # 查看工作区状态
+        git diff     # 查看具体的文件变更
+
     - name: Commit and push webs/ changes back to A 仓库
       run: |
         echo "🚀 提交 webs/ 更新到 A 仓库"
@@ -67,6 +72,12 @@ jobs:
       run: |
         echo "📥 克隆目标 B 仓库：${USER}/${REPO}"
         git clone https://x-access-token:${TOKEN}@github.com/${USER}/${REPO}.git target-repo
+
+    - name: Check for changes before pushing to B repo
+      run: |
+        cd target-repo
+        git status  # 查看目标仓库状态
+        git diff     # 查看具体的文件变更
 
     - name: Copy webs/ to B 仓库
       run: |
