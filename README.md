@@ -4,248 +4,248 @@ Below is the latest status of monitored websites:
 
 | URL | Status | Status Code | Response Time | Last Checked |
 |-----|--------|-------------|---------------|--------------|
-| https://pandora-vercel-one-nu.vercel.app | ✅ Up | 200 | 2518.60 ms | 2025-08-04T17:00:52.596545 |
-| https://chat-beta-woad.vercel.app | ✅ Up | 200 | 2348.28 ms | 2025-08-04T17:00:54.945035 |
-| https://chatgpt-ai-jet.vercel.app | ✅ Up | 200 | 84.79 ms | 2025-08-04T17:00:55.030000 |
-| https://ai-assistant-five-theta.vercel.app | ✅ Up | 200 | 90.25 ms | 2025-08-04T17:00:55.120394 |
-| http://zot.ydns.eu | ⚠️ Down (Status: 404) | 404 | 482.53 ms | 2025-08-04T17:00:55.603066 |
-| http://poxy.ydns.eu | ⚠️ Down (Status: 403) | 403 | 586.67 ms | 2025-08-04T17:00:56.189851 |
-| http://long.ydns.eu | ⚠️ Down (Status: 404) | 404 | 571.44 ms | 2025-08-04T17:00:56.761403 |
-| https://drv.ydns.eu | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.176152 |
-| https://cdue.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.269687 |
-| https://educ.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.295877 |
-| https://tau.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.313430 |
-| https://svip.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.490915 |
-| https://zote.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.668142 |
-| https://ven.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.705085 |
-| https://zfo.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.731756 |
-| https://zfo.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.981852 |
-| https://diffireworks.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:57.994616 |
-| https://vip.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.241592 |
-| https://dsk.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.260072 |
-| https://fox.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.396898 |
-| https://xiolin.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.532670 |
-| https://sac.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.543700 |
-| https://kaixin.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:58.636016 |
-| https://wwv.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.104870 |
-| https://mov.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.130432 |
-| https://pan.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.146066 |
-| https://siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.241720 |
-| https://wwo.cloudns.nz | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.541380 |
-| https://std.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:00:59.717881 |
-| https://vercel.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.122150 |
-| https://virgo.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.141897 |
-| https://wwo.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.158115 |
-| https://vx.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.426206 |
-| https://kenelm.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.525693 |
-| https://beer.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:00.897657 |
-| https://vast.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:01.006942 |
-| https://vice.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:01.290103 |
-| https://ipen.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:01.407411 |
-| https://kaxoi.eu.org | ✅ Up | 200 | 561.99 ms | 2025-08-04T17:01:01.969431 |
-| https://kcoco.eu.org | ⚠️ Down (Status: 403) | 403 | 185.26 ms | 2025-08-04T17:01:02.154854 |
-| https://linqin.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:12.305061 |
-| https://ricpig.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:12.529056 |
-| https://skvip.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:12.634449 |
-| https://skyle.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:22.760845 |
-| https://suke.eu.org | ⚠️ Down (Status: 403) | 403 | 660.74 ms | 2025-08-04T17:01:23.421626 |
-| https://vercl.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:33.690971 |
-| https://vipn.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:43.824019 |
-| https://wvvp.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:43.930116 |
-| https://ipzo.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:01:54.466592 |
-| https://linqing.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:04.699298 |
-| https://stds.eu.org | ✅ Up | 200 | 2475.29 ms | 2025-08-04T17:02:07.174625 |
-| https://viko.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:17.311050 |
-| https://vipk.eu.org | ✅ Up | 200 | 303.50 ms | 2025-08-04T17:02:17.614585 |
-| https://xongan.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:27.766374 |
-| https://zosx.eu.org | ⚠️ Down (Status: 403) | 403 | 230.76 ms | 2025-08-04T17:02:27.997186 |
-| https://zot.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:28.043713 |
-| https://xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:28.090351 |
-| https://std.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:28.494048 |
-| https://xio.edu.publicvm.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:28.666260 |
-| https://xio.jxsio.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:29.297434 |
-| https://xioo.jxios.dynv6.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:29.741062 |
-| https://xioo.kaxoi.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:29.881367 |
-| https://xioo.wwo.cloudns.nz | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.019228 |
-| https://xio.siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.120483 |
-| https://xio.std.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.395084 |
-| https://xio.vip.dns-dynamic.net | ⚠️ Down (Status: 530) | 530 | 163.30 ms | 2025-08-04T17:02:31.558422 |
-| https://xio.zon.byinter.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.595604 |
-| https://xio.zoot.myfw.us | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.684942 |
-| https://xio.gzos.link | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.745002 |
-| https://xioo.educ.line.pm | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:31.864672 |
-| https://xio.sac.cloudns.biz | ⚠️ Down (Status: 530) | 530 | 141.28 ms | 2025-08-04T17:02:32.005981 |
-| https://xio.std.cloudns.org | ⚠️ Down (Status: 403) | 403 | 234.50 ms | 2025-08-04T17:02:32.240625 |
-| https://xio.std.kesug.com | ✅ Up | 200 | 229.90 ms | 2025-08-04T17:02:32.470602 |
-| https://xio.stu.loveslife.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:33.239004 |
-| https://xio.wwv.cloudns.be | ⚠️ Down (Status: 530) | 530 | 156.11 ms | 2025-08-04T17:02:33.395144 |
-| https://xio.xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:33.484171 |
-| https://xio.xiaohhh.xyz | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:43.763331 |
-| https://xio.zoten.onflashdrive.app | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:43.856505 |
-| https://xio.gzos.rr.nu | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:43.965988 |
-| https://xio.lzhoo.v6.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:44.652160 |
-| https://xio.std.000.pe | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:45.018903 |
-| https://xio.wwvio.dns.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:45.618154 |
-| https://xio.zon.lookin.at | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:45.872984 |
-| https://xio.zon.myredirect.us | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:46.235879 |
-| https://xio.zos.22web.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:46.382972 |
-| https://xio.zot.rf.gd | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:50.231655 |
-| https://xio.zoxte.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:51.024675 |
-| https://xio.zoxte.v6.rocks | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:51.406559 |
-| https://xio.soho.lovedub.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:52.015017 |
-| https://xio.xn--ebbpo8a.xn--y9a3aq | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:52.181873 |
-| https://xio.zoxte.dns.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:52.772492 |
-| https://soho.perslist.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:53.073938 |
-| https://wonder.dynx.me | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:53.546829 |
-| https://edu.42web.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:02:58.589974 |
-| https://std.great-site.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:02.787147 |
-| https://std.kesug.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:03.446488 |
-| https://zoon.wuaze.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:04.119747 |
-| https://chatz.lovestoblog.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:04.777986 |
-| https://zok.free.nf | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:09.415723 |
-| https://inwen.wuaze.com | ✅ Up | 200 | 662.07 ms | 2025-08-04T17:03:10.077829 |
-| https://linwen.rf.gd | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:15.079123 |
-| https://edu.lovestoblog.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:16.130046 |
-| https://bre.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:16.221081 |
-| https://std.000.pe | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:16.686809 |
-| https://daiwen.infinityfreeapp.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:20.359610 |
-| https://educ.free.nf | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:25.654294 |
-| https://miao.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:25.897163 |
-| https://sch.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:26.112922 |
-| https://si.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:26.475197 |
-| https://skyo.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:26.677640 |
-| https://vp.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:26.970088 |
-| https://zoot.unaux.com | ✅ Up | 200 | 8935.89 ms | 2025-08-04T17:03:35.906008 |
-| https://www.muppets.cloudns.ch | ✅ Up | 200 | 291.17 ms | 2025-08-04T17:03:36.197360 |
-| https://clo.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:36.393875 |
-| https://duf.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:36.499959 |
-| https://lzi.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:36.683331 |
-| https://muppets.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:36.877629 |
-| https://sen.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:37.059104 |
-| https://uto.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:37.162175 |
-| https://vp.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:37.651618 |
-| https://edu.tkpk.cc | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:47.818073 |
-| https://edu.ezpz.work | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:48.237980 |
-| https://woshiwoyansebuya.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:48.338346 |
-| https://shisi.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:48.439367 |
-| https://www.xiaomaomi.dns-dynamic.net | ✅ Up | 200 | 1671.79 ms | 2025-08-04T17:03:50.111181 |
-| https://www.yiluhuohuadaishadian.dns-dynamic.net | ✅ Up | 200 | 198.00 ms | 2025-08-04T17:03:50.309360 |
-| https://www.liniang.cloudns.be | ✅ Up | 200 | 402.96 ms | 2025-08-04T17:03:50.712449 |
-| https://cdy52.pages.dev | ✅ Up | 200 | 179.50 ms | 2025-08-04T17:03:50.892120 |
-| https://xio.live-on.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:52.544106 |
-| https://xio.mydns.tw | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:53.921836 |
-| https://xio.keyword-on.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:55.510268 |
-| https://xio.wjg.jp | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:56.227884 |
-| https://woxy.xio.keyword-on.net | ✅ Up | 200 | 591.25 ms | 2025-08-04T17:03:56.819164 |
-| https://stdu.nyc.mn | ⚠️ Down (Status: 403) | 403 | 273.83 ms | 2025-08-04T17:03:57.093133 |
-| https://mokin.nyc.mn | ⚠️ Down (Status: 403) | 403 | 327.22 ms | 2025-08-04T17:03:57.420419 |
-| https://jxio.nyc.mn | ❌ Down (Error) | None | N/A | 2025-08-04T17:03:57.817423 |
-| https://veco.nyc.mn | ⚠️ Down (Status: 530) | 530 | 1064.57 ms | 2025-08-04T17:03:58.882025 |
-| https://zoot.nyc.mn | ⚠️ Down (Status: 530) | 530 | 508.31 ms | 2025-08-04T17:03:59.390417 |
-| https://xisu.nyc.mn | ✅ Up | 200 | 361.97 ms | 2025-08-04T17:03:59.752458 |
-| https://odbar.stdu.nyc.mn | ⚠️ Down (Status: 403) | 403 | 400.09 ms | 2025-08-04T17:04:00.152702 |
-| https://res.zoot.nyc.mn | ⚠️ Down (Status: 530) | 530 | 478.00 ms | 2025-08-04T17:04:00.630840 |
-| https://age.xisu.nyc.mn | ✅ Up | 200 | 548.63 ms | 2025-08-04T17:04:01.179554 |
-| https://eolin.avisa.dedyn.io | ✅ Up | 200 | 284.46 ms | 2025-08-04T17:04:01.464181 |
-| https://zoot.serv00.net | ⚠️ Down (Status: 403) | 403 | 772.09 ms | 2025-08-04T17:04:02.236433 |
-| https://gzols.serv00.net | ⚠️ Down (Status: 403) | 403 | 730.28 ms | 2025-08-04T17:04:02.966889 |
-| https://zko.xio.live-on.net | ✅ Up | 200 | 309.64 ms | 2025-08-04T17:04:03.276689 |
-| https://zkc.xio.live-on.net | ✅ Up | 200 | 307.63 ms | 2025-08-04T17:04:03.584531 |
-| https://voxy.xio.gleeze.com | ✅ Up | 200 | 241.95 ms | 2025-08-04T17:04:03.826670 |
-| https://mo.stdu.3d.tc | ✅ Up | 200 | 884.81 ms | 2025-08-04T17:04:04.711679 |
-| https://wxi.jxs.byinter.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:04.846102 |
-| https://xoy.zhozo.cloudns.ch | ✅ Up | 200 | 216.51 ms | 2025-08-04T17:04:05.062670 |
-| https://wxio.edu.x24hr.com | ✅ Up | 200 | 256.05 ms | 2025-08-04T17:04:05.318918 |
-| https://wxi-8k0.edu.x24hr.com | ✅ Up | 200 | 239.42 ms | 2025-08-04T17:04:05.558502 |
-| https://wxi-yqc.edu.x24hr.com | ✅ Up | 200 | 468.48 ms | 2025-08-04T17:04:06.027155 |
-| https://lon.lxuei.cloudns.be | ✅ Up | 200 | 238.96 ms | 2025-08-04T17:04:06.266273 |
-| https://www.woloveyangqin.dns-dynamic.net | ✅ Up | 200 | 298.26 ms | 2025-08-04T17:04:06.564704 |
-| https://www.vast.cloudns.ch | ✅ Up | 200 | 1106.76 ms | 2025-08-04T17:04:07.671672 |
-| https://www.visa.com.sg | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:07.730250 |
-| https://dxzk.jxsoc.cc.ua | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:17.744988 |
-| https://xfus.educ.cloudns.biz | ✅ Up | 200 | 93.25 ms | 2025-08-04T17:04:17.838274 |
-| https://wxi-tns.edu.x24hr.com | ✅ Up | 200 | 438.15 ms | 2025-08-04T17:04:18.276585 |
-| https://wxi-38a.edu.x24hr.com | ✅ Up | 200 | 344.36 ms | 2025-08-04T17:04:18.621108 |
-| https://wxi-8fm.xio.longmusic.com | ✅ Up | 200 | 331.47 ms | 2025-08-04T17:04:18.952760 |
-| https://xinxin-d4h.xio.longmusic.com | ✅ Up | 200 | 358.61 ms | 2025-08-04T17:04:19.311543 |
-| https://www.cdue.cloudns.ch | ✅ Up | 200 | 1325.93 ms | 2025-08-04T17:04:20.637644 |
-| https://www.zto.cloudns.ch | ✅ Up | 200 | 333.31 ms | 2025-08-04T17:04:20.971125 |
-| https://wxio.xio.zyns.com | ✅ Up | 200 | 345.62 ms | 2025-08-04T17:04:21.316868 |
-| https://www.kaxin.cloudns.ch | ✅ Up | 200 | 352.89 ms | 2025-08-04T17:04:21.669943 |
-| https://www.kenelm.cloudns.ch | ✅ Up | 200 | 519.94 ms | 2025-08-04T17:04:22.190055 |
-| https://uedi.xio.zyns.com | ✅ Up | 200 | 434.42 ms | 2025-08-04T17:04:22.624646 |
-| https://wxi.xio.zyns.com | ✅ Up | 200 | 454.60 ms | 2025-08-04T17:04:23.079480 |
-| https://iufeu.xio.dynamic-dns.net | ✅ Up | 200 | 273.53 ms | 2025-08-04T17:04:23.353215 |
-| https://www.bre.cloudns.ch | ⚠️ Down (Status: 530) | 530 | 199.12 ms | 2025-08-04T17:04:23.552507 |
-| https://iorfuy.xio.dynamic-dns.net | ✅ Up | 200 | 460.31 ms | 2025-08-04T17:04:24.012896 |
-| https://www.diffireworks.cloudns.org | ✅ Up | 200 | 1043.23 ms | 2025-08-04T17:04:25.056278 |
-| https://gedu.xio.zzux.com | ✅ Up | 200 | 249.55 ms | 2025-08-04T17:04:25.305997 |
-| https://owire.xio.zzux.com | ⚠️ Down (Status: 530) | 530 | 655.17 ms | 2025-08-04T17:04:25.961382 |
-| https://ie23.xio.zzux.com | ✅ Up | 200 | 262.69 ms | 2025-08-04T17:04:26.224156 |
-| https://ewfhho.xio.zzux.com | ✅ Up | 200 | 234.78 ms | 2025-08-04T17:04:26.459088 |
-| https://ofoi.xio.longmusic.com | ✅ Up | 200 | 280.91 ms | 2025-08-04T17:04:26.740173 |
-| https://dbng.xio.longmusic.com | ✅ Up | 200 | 342.09 ms | 2025-08-04T17:04:27.082430 |
-| https://iuwe.zote.rr.nu | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:27.222590 |
-| https://www.ven.cloudns.biz | ✅ Up | 200 | 799.24 ms | 2025-08-04T17:04:28.021872 |
-| https://iuwe.stdue.dynv6.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:28.880870 |
-| https://xio.won.cc.ua | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:38.901340 |
-| https://cdy.jxs.dix.asia | ✅ Up | 200 | 896.15 ms | 2025-08-04T17:04:39.797523 |
-| https://djgj.xio.mydns.tw | ✅ Up | 200 | 498.34 ms | 2025-08-04T17:04:40.296022 |
-| https://ekq.xio.keyword-on.net | ✅ Up | 200 | 681.53 ms | 2025-08-04T17:04:40.977810 |
-| https://i8xx.xio.wjg.jp | ✅ Up | 200 | 675.45 ms | 2025-08-04T17:04:41.653456 |
-| https://rsboat.wox.us.kg | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:45.549867 |
-| https://gqhuo.jxios.dynv6.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:46.170732 |
-| https://kzze.lzhoo.v6.navy | ✅ Up | 200 | 488.88 ms | 2025-08-04T17:04:46.659649 |
-| https://woxy.limkco.evai.pl | ✅ Up | 200 | 289.33 ms | 2025-08-04T17:04:46.949205 |
-| https://pxyu.sohoo.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:47.869336 |
-| https://zerd.sohoo.dns.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:48.791284 |
-| https://zxi.sohoo.v6.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:49.768910 |
-| https://kosti.xio.dynamic-dns.net | ✅ Up | 200 | 319.26 ms | 2025-08-04T17:04:50.088208 |
-| https://mckd.edu.as19557.net | ✅ Up | 200 | 391.01 ms | 2025-08-04T17:04:50.479403 |
-| https://mirt.edu.as19557.net | ✅ Up | 200 | 327.12 ms | 2025-08-04T17:04:50.806683 |
-| https://mjsd.xio.itsaol.com | ✅ Up | 200 | 250.28 ms | 2025-08-04T17:04:51.057157 |
-| https://nitay.edu.qpoe.com | ✅ Up | 200 | 387.70 ms | 2025-08-04T17:04:51.445028 |
-| https://sctsz.zote.cloudns.org | ✅ Up | 200 | 1042.84 ms | 2025-08-04T17:04:52.488038 |
-| https://xjisd.educ.cloudns.biz | ✅ Up | 200 | 225.02 ms | 2025-08-04T17:04:52.713222 |
-| https://wibl.zfo.dns-dynamic.net | ✅ Up | 200 | 313.44 ms | 2025-08-04T17:04:53.026844 |
-| https://wzko.siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:53.202126 |
-| https://xswi.wwo.cloudns.nz | ✅ Up | 200 | 254.87 ms | 2025-08-04T17:04:53.457033 |
-| https://zelm.vast.cloudns.ch | ⚠️ Down (Status: 530) | 530 | 508.26 ms | 2025-08-04T17:04:53.965454 |
-| https://kjus.xio.cloud-ip.biz | ✅ Up | 200 | 221.44 ms | 2025-08-04T17:04:54.187038 |
-| https://gitxc.vip.ip-dynamic.org | ✅ Up | 200 | 495.92 ms | 2025-08-04T17:04:54.683117 |
-| https://bayio.edu.dynx.me | ✅ Up | 200 | 219.27 ms | 2025-08-04T17:04:54.902537 |
-| https://towa.xio.bolo.fyi | ✅ Up | 200 | 527.78 ms | 2025-08-04T17:04:55.430489 |
-| https://suco.edu.ezpz.work | ✅ Up | 200 | 322.47 ms | 2025-08-04T17:04:55.753152 |
-| https://wov.soho.lovedub.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:56.610056 |
-| https://zipn.soho.lbahq.com | ✅ Up | 200 | 298.95 ms | 2025-08-04T17:04:56.909047 |
-| https://parp.xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:57.006264 |
-| https://agei.svip.app.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:57.612397 |
-| https://baic.kuilut.tic.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:57.743056 |
-| https://dziy.svip.blogu.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:58.327627 |
-| https://flq.wwon.con.tc | ✅ Up | 200 | 391.83 ms | 2025-08-04T17:04:58.719492 |
-| https://rowb.svip.san.tc | ✅ Up | 200 | 636.57 ms | 2025-08-04T17:04:59.356212 |
-| https://itss.wxio.sitesi.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:59.924864 |
-| https://sni=xn--rss272l.us.kg | ❌ Down (Error) | None | N/A | 2025-08-04T17:04:59.925561 |
-| https://cxaz.sohoo.isgre.at | ✅ Up | 200 | 391.27 ms | 2025-08-04T17:05:00.316855 |
-| https://subi.zone.id | ⚠️ Down (Status: 530) | 530 | 636.06 ms | 2025-08-04T17:05:00.953070 |
-| https://muzic.zone.id | ⚠️ Down (Status: 404) | 404 | 1532.83 ms | 2025-08-04T17:05:02.485976 |
-| https://maxb.zone.id | ⚠️ Down (Status: 404) | 404 | 1505.15 ms | 2025-08-04T17:05:03.991291 |
-| https://educ.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:05.837868 |
-| https://fynix.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:07.569296 |
-| https://celon.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:09.217261 |
-| https://soren.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:10.535097 |
-| https://zyrel.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:12.378535 |
-| https://vexar.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:13.462976 |
-| https://xylar.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:14.908968 |
-| https://drevo.zone.id | ⚠️ Down (Status: 404) | 404 | 1316.97 ms | 2025-08-04T17:05:16.225977 |
-| https://mirox.zone.id | ⚠️ Down (Status: 404) | 404 | 958.09 ms | 2025-08-04T17:05:17.184243 |
-| https://nerix.zone.id | ⚠️ Down (Status: 404) | 404 | 1309.62 ms | 2025-08-04T17:05:18.494039 |
-| https://fenix.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:19.001583 |
-| https://xiron.zone.id | ⚠️ Down (Status: 404) | 404 | 1012.23 ms | 2025-08-04T17:05:20.013845 |
-| https://voren.zone.id | ⚠️ Down (Status: 404) | 404 | 1204.85 ms | 2025-08-04T17:05:21.218843 |
-| https://lioro.zone.id | ⚠️ Down (Status: 404) | 404 | 1262.18 ms | 2025-08-04T17:05:22.481188 |
-| https://kyron.zone.id | ⚠️ Down (Status: 404) | 404 | 1262.41 ms | 2025-08-04T17:05:23.743758 |
-| https://novix.zone.id | ⚠️ Down (Status: 404) | 404 | 1554.35 ms | 2025-08-04T17:05:25.298319 |
-| https://gife.zone.id | ⚠️ Down (Status: 404) | 404 | 1239.73 ms | 2025-08-04T17:05:26.538201 |
-| https://span.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:27.879704 |
-| https://mook.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:05:28.877850 |
+| https://pandora-vercel-one-nu.vercel.app | ✅ Up | 200 | 2587.64 ms | 2025-08-04T17:37:29.075263 |
+| https://chat-beta-woad.vercel.app | ✅ Up | 200 | 2440.67 ms | 2025-08-04T17:37:31.516156 |
+| https://chatgpt-ai-jet.vercel.app | ✅ Up | 200 | 83.47 ms | 2025-08-04T17:37:31.599805 |
+| https://ai-assistant-five-theta.vercel.app | ✅ Up | 200 | 76.05 ms | 2025-08-04T17:37:31.675961 |
+| http://zot.ydns.eu | ⚠️ Down (Status: 404) | 404 | 772.81 ms | 2025-08-04T17:37:32.448899 |
+| http://poxy.ydns.eu | ⚠️ Down (Status: 403) | 403 | 788.49 ms | 2025-08-04T17:37:33.237509 |
+| http://long.ydns.eu | ⚠️ Down (Status: 404) | 404 | 834.12 ms | 2025-08-04T17:37:34.071745 |
+| https://drv.ydns.eu | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:34.589961 |
+| https://cdue.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:34.757937 |
+| https://educ.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:34.844324 |
+| https://tau.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:34.961392 |
+| https://svip.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.153176 |
+| https://zote.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.349303 |
+| https://ven.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.426717 |
+| https://zfo.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.611893 |
+| https://zfo.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.767870 |
+| https://diffireworks.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:35.945308 |
+| https://vip.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.032253 |
+| https://dsk.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.118805 |
+| https://fox.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.196183 |
+| https://xiolin.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.303316 |
+| https://sac.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.381063 |
+| https://kaixin.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.478426 |
+| https://wwv.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:36.984164 |
+| https://mov.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:37.059550 |
+| https://pan.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:37.324509 |
+| https://siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:37.535895 |
+| https://wwo.cloudns.nz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:37.748188 |
+| https://std.cloudns.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:37.933292 |
+| https://vercel.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:38.309589 |
+| https://virgo.cloudns.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:38.390269 |
+| https://wwo.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:38.472666 |
+| https://vx.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:38.833999 |
+| https://kenelm.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:39.155683 |
+| https://beer.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:39.266520 |
+| https://vast.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:39.401575 |
+| https://vice.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:39.936080 |
+| https://ipen.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:40.581191 |
+| https://kaxoi.eu.org | ✅ Up | 200 | 1112.49 ms | 2025-08-04T17:37:41.693713 |
+| https://kcoco.eu.org | ⚠️ Down (Status: 403) | 403 | 197.71 ms | 2025-08-04T17:37:41.891602 |
+| https://linqin.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:52.067079 |
+| https://ricpig.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:52.228667 |
+| https://skvip.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:37:52.346578 |
+| https://skyle.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:02.720871 |
+| https://suke.eu.org | ⚠️ Down (Status: 403) | 403 | 694.14 ms | 2025-08-04T17:38:03.415049 |
+| https://vercl.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:13.628611 |
+| https://vipn.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:23.771399 |
+| https://wvvp.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:23.933465 |
+| https://ipzo.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:34.141831 |
+| https://linqing.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:44.385299 |
+| https://stds.eu.org | ✅ Up | 200 | 831.58 ms | 2025-08-04T17:38:45.216913 |
+| https://viko.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:38:55.415069 |
+| https://vipk.eu.org | ✅ Up | 200 | 275.60 ms | 2025-08-04T17:38:55.690707 |
+| https://xongan.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:05.907647 |
+| https://zosx.eu.org | ⚠️ Down (Status: 403) | 403 | 239.17 ms | 2025-08-04T17:39:06.146858 |
+| https://zot.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:06.404305 |
+| https://xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:06.450336 |
+| https://std.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:06.536104 |
+| https://xio.edu.publicvm.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:06.906412 |
+| https://xio.jxsio.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:07.813918 |
+| https://xioo.jxios.dynv6.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:08.568129 |
+| https://xioo.kaxoi.eu.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:08.690043 |
+| https://xioo.wwo.cloudns.nz | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:09.820191 |
+| https://xio.siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:10.029708 |
+| https://xio.std.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:10.478817 |
+| https://xio.vip.dns-dynamic.net | ⚠️ Down (Status: 530) | 530 | 147.87 ms | 2025-08-04T17:39:10.626726 |
+| https://xio.zon.byinter.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:10.701564 |
+| https://xio.zoot.myfw.us | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:10.933123 |
+| https://xio.gzos.link | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:10.957915 |
+| https://xioo.educ.line.pm | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:11.087537 |
+| https://xio.sac.cloudns.biz | ⚠️ Down (Status: 530) | 530 | 133.02 ms | 2025-08-04T17:39:11.220592 |
+| https://xio.std.cloudns.org | ⚠️ Down (Status: 403) | 403 | 209.40 ms | 2025-08-04T17:39:11.430168 |
+| https://xio.std.kesug.com | ✅ Up | 200 | 303.33 ms | 2025-08-04T17:39:11.733597 |
+| https://xio.stu.loveslife.biz | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:12.541076 |
+| https://xio.wwv.cloudns.be | ⚠️ Down (Status: 530) | 530 | 226.21 ms | 2025-08-04T17:39:12.767320 |
+| https://xio.xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:12.821135 |
+| https://xio.xiaohhh.xyz | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.042063 |
+| https://xio.zoten.onflashdrive.app | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.156887 |
+| https://xio.gzos.rr.nu | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.184735 |
+| https://xio.lzhoo.v6.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.400279 |
+| https://xio.std.000.pe | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.724021 |
+| https://xio.wwvio.dns.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:23.929020 |
+| https://xio.zon.lookin.at | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:24.073925 |
+| https://xio.zon.myredirect.us | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:24.176253 |
+| https://xio.zos.22web.org | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:24.500825 |
+| https://xio.zot.rf.gd | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:25.034091 |
+| https://xio.zoxte.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:25.552966 |
+| https://xio.zoxte.v6.rocks | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:26.301145 |
+| https://xio.soho.lovedub.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:26.728960 |
+| https://xio.xn--ebbpo8a.xn--y9a3aq | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:26.847665 |
+| https://xio.zoxte.dns.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:27.876281 |
+| https://soho.perslist.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:28.051497 |
+| https://wonder.dynx.me | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:28.344745 |
+| https://edu.42web.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:29.987444 |
+| https://std.great-site.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:30.663183 |
+| https://std.kesug.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:31.444834 |
+| https://zoon.wuaze.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:32.680738 |
+| https://chatz.lovestoblog.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:33.603601 |
+| https://zok.free.nf | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:34.458670 |
+| https://inwen.wuaze.com | ✅ Up | 200 | 1756.78 ms | 2025-08-04T17:39:36.215502 |
+| https://linwen.rf.gd | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:36.935874 |
+| https://edu.lovestoblog.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:37.657211 |
+| https://bre.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:37.743810 |
+| https://std.000.pe | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:38.555339 |
+| https://daiwen.infinityfreeapp.com | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:39.191024 |
+| https://educ.free.nf | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:39.810458 |
+| https://miao.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:39.889235 |
+| https://sch.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:40.122160 |
+| https://si.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:40.427819 |
+| https://skyo.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:40.508096 |
+| https://vp.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:40.665760 |
+| https://zoot.unaux.com | ✅ Up | 200 | 1111.91 ms | 2025-08-04T17:39:41.777730 |
+| https://www.muppets.cloudns.ch | ✅ Up | 200 | 254.61 ms | 2025-08-04T17:39:42.032564 |
+| https://clo.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.191593 |
+| https://duf.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.351758 |
+| https://lzi.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.511127 |
+| https://muppets.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.672879 |
+| https://sen.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.747178 |
+| https://uto.cloudns.ch | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:42.974901 |
+| https://vp.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:43.230111 |
+| https://edu.tkpk.cc | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:53.355613 |
+| https://edu.ezpz.work | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:53.526482 |
+| https://woshiwoyansebuya.cloudns.be | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:53.685948 |
+| https://shisi.dns-dynamic.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:53.763801 |
+| https://www.xiaomaomi.dns-dynamic.net | ✅ Up | 200 | 1000.51 ms | 2025-08-04T17:39:54.764344 |
+| https://www.yiluhuohuadaishadian.dns-dynamic.net | ✅ Up | 200 | 171.03 ms | 2025-08-04T17:39:54.935573 |
+| https://www.liniang.cloudns.be | ✅ Up | 200 | 385.84 ms | 2025-08-04T17:39:55.321587 |
+| https://cdy52.pages.dev | ✅ Up | 200 | 248.62 ms | 2025-08-04T17:39:55.570390 |
+| https://xio.live-on.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:56.372393 |
+| https://xio.mydns.tw | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:57.223683 |
+| https://xio.keyword-on.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:58.069094 |
+| https://xio.wjg.jp | ❌ Down (Error) | None | N/A | 2025-08-04T17:39:58.629646 |
+| https://woxy.xio.keyword-on.net | ✅ Up | 200 | 409.03 ms | 2025-08-04T17:39:59.038716 |
+| https://stdu.nyc.mn | ⚠️ Down (Status: 403) | 403 | 498.73 ms | 2025-08-04T17:39:59.537649 |
+| https://mokin.nyc.mn | ⚠️ Down (Status: 403) | 403 | 349.97 ms | 2025-08-04T17:39:59.887688 |
+| https://jxio.nyc.mn | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:00.385525 |
+| https://veco.nyc.mn | ⚠️ Down (Status: 530) | 530 | 647.37 ms | 2025-08-04T17:40:01.032935 |
+| https://zoot.nyc.mn | ⚠️ Down (Status: 530) | 530 | 615.71 ms | 2025-08-04T17:40:01.648720 |
+| https://xisu.nyc.mn | ✅ Up | 200 | 718.50 ms | 2025-08-04T17:40:02.367319 |
+| https://odbar.stdu.nyc.mn | ⚠️ Down (Status: 403) | 403 | 257.02 ms | 2025-08-04T17:40:02.624505 |
+| https://res.zoot.nyc.mn | ⚠️ Down (Status: 530) | 530 | 690.42 ms | 2025-08-04T17:40:03.315018 |
+| https://age.xisu.nyc.mn | ✅ Up | 200 | 409.36 ms | 2025-08-04T17:40:03.724458 |
+| https://eolin.avisa.dedyn.io | ✅ Up | 200 | 212.87 ms | 2025-08-04T17:40:03.937502 |
+| https://zoot.serv00.net | ⚠️ Down (Status: 403) | 403 | 920.69 ms | 2025-08-04T17:40:04.858391 |
+| https://gzols.serv00.net | ⚠️ Down (Status: 403) | 403 | 981.76 ms | 2025-08-04T17:40:05.840336 |
+| https://zko.xio.live-on.net | ✅ Up | 200 | 438.17 ms | 2025-08-04T17:40:06.278692 |
+| https://zkc.xio.live-on.net | ✅ Up | 200 | 456.60 ms | 2025-08-04T17:40:06.735507 |
+| https://voxy.xio.gleeze.com | ✅ Up | 200 | 267.22 ms | 2025-08-04T17:40:07.002900 |
+| https://mo.stdu.3d.tc | ✅ Up | 200 | 784.05 ms | 2025-08-04T17:40:07.787129 |
+| https://wxi.jxs.byinter.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:07.825145 |
+| https://xoy.zhozo.cloudns.ch | ✅ Up | 200 | 491.79 ms | 2025-08-04T17:40:08.317039 |
+| https://wxio.edu.x24hr.com | ✅ Up | 200 | 338.69 ms | 2025-08-04T17:40:08.655931 |
+| https://wxi-8k0.edu.x24hr.com | ✅ Up | 200 | 151.93 ms | 2025-08-04T17:40:08.808044 |
+| https://wxi-yqc.edu.x24hr.com | ✅ Up | 200 | 294.43 ms | 2025-08-04T17:40:09.102656 |
+| https://lon.lxuei.cloudns.be | ✅ Up | 200 | 223.16 ms | 2025-08-04T17:40:09.326027 |
+| https://www.woloveyangqin.dns-dynamic.net | ✅ Up | 200 | 213.11 ms | 2025-08-04T17:40:09.539321 |
+| https://www.vast.cloudns.ch | ✅ Up | 200 | 1188.49 ms | 2025-08-04T17:40:10.727999 |
+| https://www.visa.com.sg | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:10.887289 |
+| https://dxzk.jxsoc.cc.ua | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:20.901913 |
+| https://xfus.educ.cloudns.biz | ✅ Up | 200 | 267.70 ms | 2025-08-04T17:40:21.169650 |
+| https://wxi-tns.edu.x24hr.com | ✅ Up | 200 | 288.12 ms | 2025-08-04T17:40:21.457970 |
+| https://wxi-38a.edu.x24hr.com | ✅ Up | 200 | 258.78 ms | 2025-08-04T17:40:21.716946 |
+| https://wxi-8fm.xio.longmusic.com | ✅ Up | 200 | 257.33 ms | 2025-08-04T17:40:21.974449 |
+| https://xinxin-d4h.xio.longmusic.com | ✅ Up | 200 | 292.32 ms | 2025-08-04T17:40:22.266946 |
+| https://www.cdue.cloudns.ch | ✅ Up | 200 | 821.72 ms | 2025-08-04T17:40:23.088842 |
+| https://www.zto.cloudns.ch | ✅ Up | 200 | 212.46 ms | 2025-08-04T17:40:23.301470 |
+| https://wxio.xio.zyns.com | ✅ Up | 200 | 504.28 ms | 2025-08-04T17:40:23.805904 |
+| https://www.kaxin.cloudns.ch | ✅ Up | 200 | 357.18 ms | 2025-08-04T17:40:24.163261 |
+| https://www.kenelm.cloudns.ch | ✅ Up | 200 | 275.03 ms | 2025-08-04T17:40:24.438465 |
+| https://uedi.xio.zyns.com | ✅ Up | 200 | 115.05 ms | 2025-08-04T17:40:24.553693 |
+| https://wxi.xio.zyns.com | ✅ Up | 200 | 244.75 ms | 2025-08-04T17:40:24.798680 |
+| https://iufeu.xio.dynamic-dns.net | ✅ Up | 200 | 345.27 ms | 2025-08-04T17:40:25.144166 |
+| https://www.bre.cloudns.ch | ⚠️ Down (Status: 530) | 530 | 235.32 ms | 2025-08-04T17:40:25.379657 |
+| https://iorfuy.xio.dynamic-dns.net | ✅ Up | 200 | 430.95 ms | 2025-08-04T17:40:25.810687 |
+| https://www.diffireworks.cloudns.org | ✅ Up | 200 | 629.16 ms | 2025-08-04T17:40:26.440066 |
+| https://gedu.xio.zzux.com | ✅ Up | 200 | 154.67 ms | 2025-08-04T17:40:26.594921 |
+| https://owire.xio.zzux.com | ⚠️ Down (Status: 530) | 530 | 513.14 ms | 2025-08-04T17:40:27.108237 |
+| https://ie23.xio.zzux.com | ✅ Up | 200 | 280.22 ms | 2025-08-04T17:40:27.388526 |
+| https://ewfhho.xio.zzux.com | ✅ Up | 200 | 316.79 ms | 2025-08-04T17:40:27.705503 |
+| https://ofoi.xio.longmusic.com | ✅ Up | 200 | 331.69 ms | 2025-08-04T17:40:28.037398 |
+| https://dbng.xio.longmusic.com | ✅ Up | 200 | 352.63 ms | 2025-08-04T17:40:28.390244 |
+| https://iuwe.zote.rr.nu | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:28.632916 |
+| https://www.ven.cloudns.biz | ✅ Up | 200 | 718.10 ms | 2025-08-04T17:40:29.351051 |
+| https://iuwe.stdue.dynv6.net | ✅ Up | 200 | 743.46 ms | 2025-08-04T17:40:30.094686 |
+| https://xio.won.cc.ua | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:40.109595 |
+| https://cdy.jxs.dix.asia | ✅ Up | 200 | 742.01 ms | 2025-08-04T17:40:40.851639 |
+| https://djgj.xio.mydns.tw | ✅ Up | 200 | 404.16 ms | 2025-08-04T17:40:41.256011 |
+| https://ekq.xio.keyword-on.net | ✅ Up | 200 | 256.39 ms | 2025-08-04T17:40:41.512578 |
+| https://i8xx.xio.wjg.jp | ✅ Up | 200 | 443.86 ms | 2025-08-04T17:40:41.956606 |
+| https://rsboat.wox.us.kg | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:46.968058 |
+| https://gqhuo.jxios.dynv6.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:47.138622 |
+| https://kzze.lzhoo.v6.navy | ✅ Up | 200 | 744.07 ms | 2025-08-04T17:40:47.882730 |
+| https://woxy.limkco.evai.pl | ✅ Up | 200 | 874.26 ms | 2025-08-04T17:40:48.757211 |
+| https://pxyu.sohoo.v6.army | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:48.932378 |
+| https://zerd.sohoo.dns.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:49.700085 |
+| https://zxi.sohoo.v6.navy | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:50.042796 |
+| https://kosti.xio.dynamic-dns.net | ✅ Up | 200 | 234.47 ms | 2025-08-04T17:40:50.277298 |
+| https://mckd.edu.as19557.net | ✅ Up | 200 | 352.76 ms | 2025-08-04T17:40:50.630227 |
+| https://mirt.edu.as19557.net | ✅ Up | 200 | 486.44 ms | 2025-08-04T17:40:51.116845 |
+| https://mjsd.xio.itsaol.com | ✅ Up | 200 | 335.31 ms | 2025-08-04T17:40:51.452343 |
+| https://nitay.edu.qpoe.com | ✅ Up | 200 | 278.08 ms | 2025-08-04T17:40:51.730590 |
+| https://sctsz.zote.cloudns.org | ✅ Up | 200 | 296.28 ms | 2025-08-04T17:40:52.027050 |
+| https://xjisd.educ.cloudns.biz | ✅ Up | 200 | 337.24 ms | 2025-08-04T17:40:52.364505 |
+| https://wibl.zfo.dns-dynamic.net | ✅ Up | 200 | 289.76 ms | 2025-08-04T17:40:52.654454 |
+| https://wzko.siv.cloudns.ph | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:53.012924 |
+| https://xswi.wwo.cloudns.nz | ✅ Up | 200 | 638.16 ms | 2025-08-04T17:40:53.651127 |
+| https://zelm.vast.cloudns.ch | ⚠️ Down (Status: 530) | 530 | 165.26 ms | 2025-08-04T17:40:53.816572 |
+| https://kjus.xio.cloud-ip.biz | ✅ Up | 200 | 275.20 ms | 2025-08-04T17:40:54.091934 |
+| https://gitxc.vip.ip-dynamic.org | ✅ Up | 200 | 378.17 ms | 2025-08-04T17:40:54.470284 |
+| https://bayio.edu.dynx.me | ✅ Up | 200 | 406.00 ms | 2025-08-04T17:40:54.876472 |
+| https://towa.xio.bolo.fyi | ✅ Up | 200 | 651.48 ms | 2025-08-04T17:40:55.528135 |
+| https://suco.edu.ezpz.work | ✅ Up | 200 | 326.31 ms | 2025-08-04T17:40:55.854616 |
+| https://wov.soho.lovedub.net | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:56.583540 |
+| https://zipn.soho.lbahq.com | ✅ Up | 200 | 564.44 ms | 2025-08-04T17:40:57.148020 |
+| https://parp.xeo.dedyn.io | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:57.499551 |
+| https://agei.svip.app.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:58.284751 |
+| https://baic.kuilut.tic.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:58.343534 |
+| https://dziy.svip.blogu.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:40:59.126576 |
+| https://flq.wwon.con.tc | ✅ Up | 200 | 570.55 ms | 2025-08-04T17:40:59.697190 |
+| https://rowb.svip.san.tc | ✅ Up | 200 | 623.64 ms | 2025-08-04T17:41:00.321010 |
+| https://itss.wxio.sitesi.tc | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:01.019831 |
+| https://sni=xn--rss272l.us.kg | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:01.020536 |
+| https://cxaz.sohoo.isgre.at | ✅ Up | 200 | 268.70 ms | 2025-08-04T17:41:01.289254 |
+| https://subi.zone.id | ⚠️ Down (Status: 530) | 530 | 475.79 ms | 2025-08-04T17:41:01.765187 |
+| https://muzic.zone.id | ⚠️ Down (Status: 404) | 404 | 1125.60 ms | 2025-08-04T17:41:02.890861 |
+| https://maxb.zone.id | ⚠️ Down (Status: 404) | 404 | 1019.52 ms | 2025-08-04T17:41:03.910553 |
+| https://educ.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:04.832921 |
+| https://fynix.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:05.811973 |
+| https://celon.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:06.677845 |
+| https://soren.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:07.412143 |
+| https://zyrel.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:08.200885 |
+| https://vexar.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:08.869672 |
+| https://xylar.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:09.603079 |
+| https://drevo.zone.id | ⚠️ Down (Status: 404) | 404 | 751.87 ms | 2025-08-04T17:41:10.354988 |
+| https://mirox.zone.id | ⚠️ Down (Status: 404) | 404 | 699.06 ms | 2025-08-04T17:41:11.054224 |
+| https://nerix.zone.id | ⚠️ Down (Status: 404) | 404 | 722.34 ms | 2025-08-04T17:41:11.776727 |
+| https://fenix.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:12.119176 |
+| https://xiron.zone.id | ⚠️ Down (Status: 404) | 404 | 701.31 ms | 2025-08-04T17:41:12.820527 |
+| https://voren.zone.id | ⚠️ Down (Status: 404) | 404 | 814.86 ms | 2025-08-04T17:41:13.635547 |
+| https://lioro.zone.id | ⚠️ Down (Status: 404) | 404 | 958.84 ms | 2025-08-04T17:41:14.594571 |
+| https://kyron.zone.id | ⚠️ Down (Status: 404) | 404 | 949.90 ms | 2025-08-04T17:41:15.544643 |
+| https://novix.zone.id | ⚠️ Down (Status: 404) | 404 | 706.97 ms | 2025-08-04T17:41:16.251827 |
+| https://gife.zone.id | ⚠️ Down (Status: 404) | 404 | 1116.24 ms | 2025-08-04T17:41:17.368244 |
+| https://span.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:18.365208 |
+| https://mook.zone.id | ❌ Down (Error) | None | N/A | 2025-08-04T17:41:19.264085 |
