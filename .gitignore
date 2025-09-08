@@ -2353,3 +2353,8 @@ chromedriver_linux64.zip
 *.deb
 *.zip
 chrome/
+google-chrome.deb
+chromedriver_linux64.zip
+*.deb
+*.zip
+chrome/
